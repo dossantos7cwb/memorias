@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Minhas Memórias do Morelli Alypher 2024 3ºD</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="style.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- barra lateral/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">FECHAR</a> 
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">MEMÓRIAS</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">TURMA</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">LEMBRANÇAS</a>
+</nav>
+
+<!-- Menu superior em telas pequenas -->
+<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">MEMÓRIAS</span>
+  <img src="img/download.png" class="morelli">
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Efeito de sobreposição ao abrir a barra lateral em telas pequenas -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !CONTEÚDO DA PÁGINA! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+  
+  <!-- Grade de fotos -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-quarter">
+      <img src="img/3d.png" style="width:100%" onclick="onClick(this)" alt="OS MELHORES!!">
+      <img src="img/bobo.png" style="width:100%" onclick="onClick(this)" alt="esse cara e retardado">
+      <img src="img/capacete.png" style="width:100%" onclick="onClick(this)" alt="É US 59D!!">
+   </div>
+    
+   <div class="w3-quarter">
+      <img src="img/celular.png" style="width:100%" onclick="onClick(this)" alt="cara e um loko">
+      <img src="img/retardados.png" style="width:100%" onclick="onClick(this)" alt="Não sei oq falar sobre">
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="img/drake.png" style="width:100%" onclick="onClick(this)" alt="estilo é pra poucos e eu sou muito">
+      <img src="img/cueca.png" style="width:100%" onclick="onClick(this)" alt="🤣">
+    </div>
+
+    <div class="w3-quarter">
+      <img src="img/comida.png" style="width:100%" onclick="onClick(this)" alt="nois passava fome">
+      <img src="img/estilo.png" style="width:100%" onclick="onClick(this)" alt="novamente estilo e meu fraco">
+    </div>
+  </div>
+
+
+  
+  <!-- Modal para imagens em tamanho real com um clique-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+<!-- Professores  -->
+ <div class="imagens">
+<div id="about">
+  <h4 class="subtitulos"><b>3ºD</b></h4>
+  <h4 class="subtitulos"><b>SIMPLESMENTE A MELHOR TURMA SEMPRE!!!</b></h4>
+<div class="w3-row w3-grayscale-min"> 
+  <div class="w3-quarter">
+    <img src="img/3d.png" style="width:100%" onclick="onClick(this)" alt="repetindo pq essa merece né tlgdd">  
+    <img src="img/coberto.png" style="width:100%" onclick="onClick(this)" alt="cria n mostra a napa">  
+  </div>
+  
+ <div class="w3-quarter">
+  <img src="img/gurizes.png" style="width: 100%" onclick="onClick(this)" alt="santos do 3ºD ">
+    
+  </div>
+  <div class="w3-quarter">
+    <img src="img/2doido.png" style="width: 100%" onclick="onClick(this)" alt="sim, não fale nada">
+    </div>
+    <div class="w3-quarter">
+      <img src="img/viado.png" style="width: 100%" onclick="onClick(this)" alt="meio tchola">
+      </div>
+</div>
+</div>
+ 
+  
+<!-- MOMENTOS  -->
+<div id="contact">
+  <h4 class="subtitulos"><b>LEMBRANÇAS</b></h4>
+<div class="w3-row w3-grayscale-min">
+  
+  <div class="w3-quarter">
+    <img src="img/pose.png" style="width:100%" onclick="onClick(this)" alt="pose né pai">
+ </div>
+
+ <div class="w3-quarter">
+  <img src="img/policia.png" style="width:100%" onclick="onClick(this)" alt="sempre com a lei">
+</div>
+
+<div class="w3-quarter">
+  <img src="img/sentado.png" style="width:100%" onclick="onClick(this)" alt="tava sad esse dia">
+</div>
+
+  <div class="w3-quarter">
+  <img src="img/sla.png" style="width:100%" onclick="onClick(this)" alt="fora da escola">
+
+</div>
+
+<!-- Conteúdo da página final -->
+</div>
+
+<script>
+// Script para abrir e fechar a barra lateral
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Galeria de imagens modais
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+</script>
+
+<!-- Rodapé -->
+<div class="copyright">
+  2024 Alypher. Todos os direitos reservados.
+</div>  
+
+</body>
+</html>
